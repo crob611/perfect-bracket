@@ -1,0 +1,53 @@
+{
+  "name": "perfect-bracket",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cli": "^0.4.0",
+    "immutable": "^3.6.4",
+    "browserify": "^9.0.3",
+    "babel": "^4.7.16",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.0",
+    "gulp-connect": "^2.2.0",
+    "react": "^0.13.1",
+    "gulp-jshint": "^1.10.0",
+    "jshint-stylish": "^1.0.1",
+    "jshint-jsx": "^0.4.1",
+    "gulp-jscs": "^1.4.0",
+    "esprima-fb": "^14001.1.0-dev-harmony-fb",
+    "babel-jest": "^5.0.1",
+    "harmonize": "^1.4.1",
+    "gulp-shell": "^0.4.1"
+  },
+  "browserify": {
+    "extensions": [
+      ".js",
+      ".jsx"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "rootDir": ".",
+    "testPathDirs": [
+      "<rootDir>/src"
+    ],
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
